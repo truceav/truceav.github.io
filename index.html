@@ -21,11 +21,18 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-1">TRUCE-AV: A Multimodal dataset for Trust and Comfort Estimation in Autonomous Vehicles</h1>
-      <h2 class="subtitle">Trust and Comfort Estimation in Autonomous Vehicles</h2>
+      <h2 class="subtitle">ECAI 2025</h2>
+      <div class="is-size-5 publication-authors">
+        <span class="author-block"><a href="#">Aditi Bhalla</a><sup>1,2</sup>,</span>
+        <span class="author-block"><a href="#">Christian Hellert</a><sup>2</sup>,</span>
+        <span class="author-block"><a href="#">Enkelejda Kasneci</a><sup>1</sup></span>
+        <span class="author-block"><a href="#">Nastassja Becker</a><sup>2</sup></span>
+      </div>
+
       <div>
         <a href="#paper" class="button is-dark is-rounded">Paper</a>
-        <a href="#video" class="button is-dark is-rounded">Demo</a>
-        <a href="https://github.com/myusername/myproject" class="button is-dark is-rounded">Code</a>
+        <a href="#dataset" class="button is-dark is-rounded">Dataset</a>
+        <a href="contact" class="button is-dark is-rounded">Contact</a>
       </div>
     </div>
   </div>
@@ -36,12 +43,19 @@
   <div class="container">
     <h2 class="title is-3">Abstract</h2>
     <p>
-      Understanding and estimating driver trust and comfort are essential for the safety and widespread acceptance of autonomous vehicles. 
+      Understanding and estimating driver trust and comfort are essential for the safety and widespread acceptance of autonomous vehicles.
       Existing works analyze user trust and comfort separately, with limited real-time assessment and insufficient multimodal data. 
       This paper introduces a novel multimodal dataset called TRUCE-AV, focusing on trust and comfort estimation in autonomous vehicles.
       The dataset collects real-time trust votes and continuous comfort ratings of 31 participants during a simulator-based fully autonomous driving.
       Simultaneously, physiological signals, such as heart rate, gaze, and emotions, along with environmental data
-       (e.g., vehicle speed, nearby vehicle positions, and velocity), are recorded throughout the drive.
+      (e.g., vehicle speed, nearby vehicle positions, and velocity), are recorded throughout the drives.
+      Standard pre- and post-drive questionnaires were also administered to assess participants' trust in automation and overall well-being,
+      enabling the correlation of subjective assessments with real-time responses.
+      To demonstrate the utility of our dataset, we evaluated various machine learning models for trust and comfort estimation using physiological data. 
+      Our analysis showed that tree-based models like Random Forest and XGBoost and non-linear models such as KNN and MLP regressor achieved the best performance for trust classification and comfort regression.
+      Additionally, we identified key features that contribute to these estimations by using SHAP analysis on the top-performing models.
+      Our dataset enables the development of adaptive AV systems capable of dynamically responding to user trust and comfort levels non-invasively,
+      ultimately enhancing safety, user experience, and human-centered vehicle design. 
     </p>
   </div>
 </section>
@@ -49,9 +63,9 @@
 <section class="section">
   <div class="container">
     <h2 class="title is-3">BibTeX</h2>
-    <pre><code>@article{my2025project,
+    <pre><code>@article{truceav,
   author = {Your Name and Collaborator Name},
-  title = {My Project: Realistic 3D Reconstructions},
+  title = {TRUCE-AV: A Multimodal dataset for Trust and Comfort Estimation in Autonomous Vehicles},
   journal = {Awesome Conference on Graphics},
   year = {2025}
 }</code></pre>
