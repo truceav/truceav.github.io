@@ -108,41 +108,71 @@
     <div class="hero-body">
       <img src="./static/images/Models.png" 
            alt="Teaser image"
-           style="max-width:100%; height:auto; display:block; margin:0 auto;" />
+           style="max-width:90%; height:auto; display:block; margin:0 auto;" />
     </div>
   </div>
 </section>
 
 
 <section class="section">
-  <div class="container">
-    <h2 class="title is-3">Abstract</h2>
-    <p>
-      Understanding and estimating driver trust and comfort are essential for the safety and widespread acceptance of autonomous vehicles.
-      Existing works analyze user trust and comfort separately, with limited real-time assessment and insufficient multimodal data.
-      Therefore, we propose a novel multimodal dataset called TRUCE-AV, focusing on trust and comfort estimation in autonomous vehicles.
-    </p> 
-    <p>
-      The dataset collects real-time trust votes and continuous comfort ratings of 31 participants during a simulator-based fully autonomous driving.
-      Simultaneously, physiological signals, such as heart rate, gaze, and emotions, along with environmental data
-      (e.g., vehicle speed, nearby vehicle positions, and velocity), are recorded throughout the drives.
-      Standard pre- and post-drive questionnaires were also administered to assess participants' trust in automation and overall well-being,
-      enabling the correlation of subjective assessments with real-time responses.
-    </p>
-    <p>
-      Our dataset enables the development of adaptive AV systems capable of dynamically responding to user trust and comfort levels non-invasively,
-      ultimately enhancing safety, user experience, and human-centered vehicle design. 
-    </p>
-    <p>
-      To demonstrate the utility of our dataset, we evaluated various machine learning models for trust and comfort estimation using physiological data. 
-      Our analysis showed that tree-based models like Random Forest and XGBoost and non-linear models such as KNN and MLP regressor achieved the best performance for trust classification and comfort regression.
-      Additionally, we identified key features that contribute to these estimations by using SHAP analysis on the top-performing models.
-    </p>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+        <p>
+          Understanding and estimating driver trust and comfort are essential for the safety and widespread acceptance of autonomous vehicles.
+          Existing works analyze user trust and comfort separately, with limited real-time assessment and insufficient multimodal data.
+          Therefore, we propose a <b>novel multimodal dataset called TRUCE-AV, focusing on trust and comfort estimation in autonomous vehicles</b>.
+        </p> 
+        <p>
+          The dataset collects real-time trust votes and continuous comfort ratings of 31 participants during a simulator-based fully autonomous driving.
+          Simultaneously, physiological signals, such as heart rate, gaze, and emotions, along with environmental data
+          (e.g., vehicle speed, nearby vehicle positions, and velocity), are recorded throughout the drives.
+          Standard pre- and post-drive questionnaires were also administered to assess participants' trust in automation and overall well-being,
+          enabling the correlation of subjective assessments with real-time responses.
+        </p>
+        <p>
+          Our dataset enables the development of adaptive AV systems capable of dynamically responding to user trust and comfort levels non-invasively,
+          ultimately enhancing safety, user experience, and human-centered vehicle design. 
+        </p>
+        <p>
+          To demonstrate the utility of our dataset, we evaluated various machine learning models for trust and comfort estimation using physiological data. 
+          Our analysis showed that tree-based models like Random Forest and XGBoost and non-linear models such as KNN and MLP regressor achieved the best performance for trust classification and comfort regression.
+          Additionally, we identified key features that contribute to these estimations by using SHAP analysis on the top-performing models.
+        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Dataset Description -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset</h2>
+        <p>
+          Description of the dataset goes here.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Benchmark Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <p>
+          Results go here. 
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
     <h2 class="title is-3">BibTeX</h2>
     <pre><code>@misc{bhalla2025truceavmultimodaldatasettrust,
       title={TRUCE-AV: A Multimodal dataset for Trust and Comfort Estimation in Autonomous Vehicles}, 

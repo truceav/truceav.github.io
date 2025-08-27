@@ -1,80 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Connected Modes Ring — multimodal trust & comfort data for AVs -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Connected Modes Ring</title>
-  <desc id="desc">Circular logo showing a data ring connecting car, public transit, and pedestrian modes.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Multimodal Dataset Icon (Large)</title>
+  <desc id="desc">Car at center, surrounded by camera, eye, brain, and microphone icons connected with dotted lines, on a white background.</desc>
 
-  <!-- ====== THEME (edit these) ====== -->
   <defs>
     <style>
-      .ring      { fill:none; stroke:#0EA5E9; stroke-width:14; }
-      .ring--out { fill:none; stroke:#A7F3D0; stroke-width:10; stroke-dasharray:10 16; opacity:.9; }
-      .node      { fill:#0EA5E9; }
-      .line-a    { fill:none; stroke:#38BDF8; stroke-width:4; stroke-linecap:round; }
-      .line-b    { fill:none; stroke:#34D399; stroke-width:4; stroke-linecap:round; }
-      .icon      { fill:#111827; }
-      .icon-alt  { fill:#F9FAFB; }
-      .bg-soft   { fill:url(#soft); }
+      .bg { fill:#ffffff; }
+      .ring { fill:none; stroke:#0EA5E9; stroke-width:6; stroke-dasharray:10 14; opacity:.7; }
+      .icon { fill:#111827; }
+      .node-circle { fill:#F0F9FF; stroke:#0EA5E9; stroke-width:4; }
     </style>
-
-    <!-- Soft radial to give subtle depth (optional) -->
-    <radialGradient id="soft" cx="50%" cy="42%" r="65%">
-      <stop offset="0%" stop-color="#F8FCFF"/>
-      <stop offset="100%" stop-color="#ECFEFF"/>
-    </radialGradient>
   </defs>
 
-  <!-- ====== SOFT BACKDROP (optional) ====== -->
-  <circle class="bg-soft" cx="256" cy="256" r="216"/>
+  <!-- White background -->
+  <circle class="bg" cx="300" cy="300" r="280"/>
 
-  <!-- ====== DATA RINGS ====== -->
-  <circle class="ring" cx="256" cy="256" r="160"/>
-  <circle class="ring--out" cx="256" cy="256" r="200"/>
+  <!-- Dotted circular connection -->
+  <circle class="ring" cx="300" cy="300" r="200"/>
 
-  <!-- ====== DATA NODES (cardinal points) ====== -->
-  <circle class="node" cx="256" cy="96"  r="8"/>
-  <circle class="node" cx="416" cy="256" r="8"/>
-  <circle class="node" cx="256" cy="416" r="8"/>
-  <circle class="node" cx="96"  cy="256" r="8"/>
-
-  <!-- ====== CONNECTION LINES ====== -->
-  <path class="line-a" d="M256 96 L372 236"/>
-  <path class="line-b" d="M372 236 L256 388"/>
-  <path class="line-a" d="M256 388 L96 256"/>
-  <path class="line-b" d="M96 256 L256 96"/>
-
-  <!-- ====== ICONS ====== -->
-
-  <!-- Car (top) -->
-  <g transform="translate(0,-8)">
-    <rect class="icon" x="228" y="116" width="56" height="28" rx="8"/>
-    <circle class="icon" cx="240" cy="150" r="6"/>
-    <circle class="icon" cx="272" cy="150" r="6"/>
+  <!-- Central car -->
+  <g transform="translate(240,270)">
+    <rect class="icon" x="0" y="0" width="120" height="50" rx="12"/>
+    <circle class="icon" cx="25" cy="60" r="10"/>
+    <circle class="icon" cx="95" cy="60" r="10"/>
   </g>
 
-  <!-- Transit / train-bus (right) -->
-  <g transform="translate(0,0)">
-    <rect class="icon" x="372" y="228" width="40" height="56" rx="8"/>
-    <rect class="icon-alt" x="378" y="236" width="28" height="18" rx="3"/>
-    <rect class="icon-alt" x="378" y="260" width="28" height="10" rx="2"/>
-    <circle class="icon" cx="384" cy="290" r="5"/>
-    <circle class="icon" cx="404" cy="290" r="5"/>
+  <!-- Surrounding nodes -->
+
+  <!-- Camera (top) -->
+  <g transform="translate(270,80)">
+    <circle class="node-circle" cx="30" cy="30" r="34"/>
+    <rect class="icon" x="16" y="22" width="28" height="18" rx="3"/>
+    <circle class="icon" cx="30" cy="31" r="5"/>
   </g>
 
-  <!-- Pedestrian (bottom) -->
-  <g transform="translate(0,0)">
-    <circle class="icon" cx="256" cy="388" r="8"/>
-    <path class="icon" d="M256 396 l-10 18 h10 l-8 28 h12 l8-24 14 10 8-10 -16-12 8-14 z"/>
+  <!-- Eye (right) -->
+  <g transform="translate(450,270)">
+    <circle class="node-circle" cx="30" cy="30" r="34"/>
+    <ellipse class="icon" cx="30" cy="30" rx="20" ry="12"/>
+    <circle class="node-circle" cx="30" cy="30" r="5"/>
   </g>
 
-  <!-- (Optional) Left-side bike node/icon — uncomment to show a bike instead of plain node -->
-  <!--
-  <g transform="translate(-4,0)">
-    <circle class="icon" cx="96" cy="256" r="0"/> 
-    <path class="icon" d="M84 256a12 12 0 1 0 24 0a12 12 0 1 0 -24 0zM128 256a12 12 0 1 0 24 0a12 12 0 1 0 -24 0zM110 244h12l8 12h-10l-10 16h-8l12-18-4-6z"/>
+  <!-- Brain (bottom) -->
+  <g transform="translate(270,450)">
+    <circle class="node-circle" cx="30" cy="30" r="34"/>
+    <path class="icon" d="M20 28c-4-10 16-14 16-4m4 0c0-10 20-6 16 4m-16 4c-2 10-18 8-16-2m16 2c2 10 18 8 16-2"/>
   </g>
-  -->
 
-  <!-- (Optional) text lockup guide — remove in production -->
-  <!-- <text x="256" y="468" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#374151">Connected Modes Ring</text> -->
+  <!-- Microphone (left) -->
+  <g transform="translate(80,270)">
+    <circle class="node-circle" cx="30" cy="30" r="34"/>
+    <rect class="icon" x="26" y="18" width="8" height="22" rx="4"/>
+    <rect class="icon" x="22" y="40" width="16" height="6" rx="3"/>
+    <line class="icon" x1="30" y1="46" x2="30" y2="56" stroke="#111827" stroke-width="3"/>
+  </g>
+
 </svg>
