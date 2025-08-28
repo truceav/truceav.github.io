@@ -155,3 +155,78 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* ------------------- */
+/* Results table styles */
+/* ------------------- */
+
+.results-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85rem;
+  margin: 20px 0;
+  table-layout: fixed;
+  background: white;               /* white background for clarity */
+  border-radius: 6px;              /* rounded corners */
+  overflow: hidden;                /* clip rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.results-table th, .results-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.results-table th {
+  background-color: #e0e0e0;  /* lighter gray for header */
+  color: #333;                /* darker text for readability */
+  font-weight: 600;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: 1px solid #ddd;  /* ensure bottom border shows */
+}
+
+.results-table td:first-child {
+  text-align: left;
+  font-weight: normal;   /* reset to normal */
+  width: 20%;
+}
+
+/* Explicitly bold only category column */
+.results-table td.category {
+  text-align: left;
+  font-weight: 600;
+  width: 20%;
+}
+
+.results-table td:nth-child(2),
+.results-table th:nth-child(2) {
+  text-align: left;
+  width: 25%;
+}
+
+/* Narrow numeric columns */
+.results-table td:nth-child(3),
+.results-table td:nth-child(4),
+.results-table td:nth-child(5),
+.results-table td:nth-child(6),
+.results-table th:nth-child(3),
+.results-table th:nth-child(4),
+.results-table th:nth-child(5),
+.results-table th:nth-child(6) {
+  width: 12%;
+}
+
+/* ----------------------------- */
+/* Comfort Regression Overrides  */
+/* ----------------------------- */
+.comfort-table td.category {
+  width: 15%;   /* narrower category column */
+}
+
+.comfort-table td:nth-child(2),
+.comfort-table th:nth-child(2) {
+  width: 35%;   /* give more room to Model names */
+}
