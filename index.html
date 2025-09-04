@@ -86,7 +86,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2508.17880"
+                <a href="s3://stadt.up-dataset/TRUCE-AV/"
                  class="external-link button is-normal is-rounded is-dark">
                  <span class="icon">
                   <i class="far fa-images"></i>
@@ -169,6 +169,19 @@
           <h2 class="title is-3">Drive-01</h2>
           <p>Consisted of 8 driving events in a 11-12 minutes drives:</p>
         </div>
+
+        <div class="content">
+          <video id="replay-video"
+            controls
+            muted
+            preload="metadata"
+            playsinline
+            style="width:100%;">
+            <source src="https://s3.eu-central-1.amazonaws.com/stadt.up-dataset/Videos/fahrt1_scenario1_zebrastreifen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
       </div>
 
       <div class="column">
@@ -193,11 +206,13 @@
 
           <p>
             To demonstrate the utility of our dataset, we evaluated various machine learning models for trust and comfort estimation using physiological data.
+            Our analysis showed that tree-based models like Random Forest and XGBoost and non-linear models
+            such as KNN and MLP regressor achieved the best performance for trust classification and comfort regression. 
           </p>
           
           <!-- Trust Classification Table -->
           <h2 class="title is-5">Trust Classification</h2>
-          <table class="results-table">
+          <table class="results-table full-width">
             <thead>
               <tr>
                 <th>Category</th>
@@ -355,6 +370,8 @@
               </tr>
             </tbody>
           </table>
+
+
       </div>
     </div>
 

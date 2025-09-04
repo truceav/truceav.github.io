@@ -162,7 +162,6 @@ body {
 
 .results-table {
   border-collapse: collapse;
-  width: 100%;
   font-size: 0.85rem;
   margin: 20px 0;
   table-layout: fixed;
@@ -219,14 +218,25 @@ body {
   width: 12%;
 }
 
+/* full-width trust table */
+.results-table.full-width {
+  width: 100%;
+}
+
 /* ----------------------------- */
 /* Comfort Regression Overrides  */
 /* ----------------------------- */
 .comfort-table td.category {
-  width: 15%;   /* narrower category column */
+  width: 20%;   /* narrower category column */
 }
 
 .comfort-table td:nth-child(2),
 .comfort-table th:nth-child(2) {
-  width: 35%;   /* give more room to Model names */
+  width: 30%;   /* give more room to Model names */
+}
+
+/* smaller comfort table */
+.results-table.comfort-table {
+  width: 85%;
+  margin: 0 auto;
 }
